@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "styles.css",
+	"sources": [
+		"../sass/styles.scss"
+	],
+	"sourcesContent": [
+		"/*Here i will use variables, Inheritance and nesting*/\r\n\r\n/*---------------My variables*---------------*/\r\n$main-color: #E4E4E4;\r\n$site-color: #273238;\r\n/*---------------My variables*---------------*/\r\n\r\n/*---------------My Inheritances-------------*/\r\n%main-text {\r\n  font-family: malgun gothic, sans-serif;\r\n  font-size: 25px;\r\n}\r\n\r\n%center {\r\n  display: flex;\r\n  align-items: center;\r\n  justify-content: center;\r\n}\r\n/*---------------My Inheritances-------------*/\r\n\r\nbody {\r\n  background-color: $main-color;\r\n  margin: 0px;\r\n  padding: 0px;\r\n}\r\n\r\nnav {\r\n  background-color: $site-color;\r\n  width: 100%;\r\n  height: 85px;\r\n  @extend %center;\r\n}\r\n\r\np {\r\n  @extend %main-text;\r\n  color: $site-color;\r\n}\r\n\r\na {\r\n  @extend %main-text;\r\n  color: $main-color;\r\n  text-decoration: none;\r\n  width: 10%;\r\n}\r\n\r\nnav {\r\n  img {\r\n    height: 70px;     \r\n  }\r\n}\r\n"
+	],
+	"names": [],
+	"mappings": "AAAA,sDAAsD;AAEtD,+CAA+C;AAG/C,+CAA+C;AAE/C,+CAA+C;;AA0B/C,AAzBA,CAyBC,EAKD,CAAC,CA9BU;EACT,WAAW,EAAE,yBAAyB;EACtC,SAAS,EAAE,IAAI;CAChB;;;AAeD,AAbA,GAaG,CAbK;EACN,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;CACxB;;AACD,+CAA+C;;AAE/C,AAAA,IAAI,CAAC;EACH,gBAAgB,EAlBL,OAAO;EAmBlB,MAAM,EAAE,GAAG;EACX,OAAO,EAAE,GAAG;CACb;;;AAED,AAAA,GAAG,CAAC;EACF,gBAAgB,EAvBL,OAAO;EAwBlB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CAEb;;;AAED,AAAA,CAAC,CAAC;EAEA,KAAK,EA/BM,OAAO;CAgCnB;;;AAED,AAAA,CAAC,CAAC;EAEA,KAAK,EArCM,OAAO;EAsClB,eAAe,EAAE,IAAI;EACrB,KAAK,EAAE,GAAG;CACX;;;AAED,AACE,GADC,CACD,GAAG,CAAC;EACF,MAAM,EAAE,IAAI;CACb"
+}

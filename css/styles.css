@@ -1,0 +1,268 @@
+/*Here i will use variables, Inheritance and nesting*/
+/*---------------My variables*---------------*/
+/*---------------My variables*---------------*/
+/*---------------My Inheritances-------------*/
+p, a {
+  font-family: malgun gothic, sans-serif;
+  font-size: 25px;
+}
+
+#nav-desktop, #nav-tablet, .row, .gradient, footer, .footer-wrapper, section, .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about, .city, .interests, .header-gradient {
+  height: 120px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-position: center;
+  background-size: cover;
+}
+
+section img, table, .white-case {
+  -webkit-box-shadow: 10px 10px 5px -11px rgba(0, 0, 0, 0.54);
+  -moz-box-shadow: 10px 10px 5px -11px rgba(0, 0, 0, 0.54);
+  box-shadow: 10px 10px 5px -11px rgba(0, 0, 0, 0.54);
+}
+
+/*---------------My Inheritances-------------*/
+body {
+  background-color: #E4E4E4;
+  margin: 0px;
+  padding: 0px;
+}
+
+#nav-desktop, #nav-tablet {
+  background-color: #273238;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+}
+
+h1 {
+  color: #E4E4E4;
+  font-size: 50px;
+}
+
+h2, h3 {
+  color: #EF4658;
+}
+
+p {
+  color: #273238;
+}
+
+a {
+  color: #E4E4E4;
+  text-decoration: none;
+  width: 10%;
+  text-align: center;
+  transition: .5s;
+}
+
+a:hover {
+  color: orange;
+  text-decoration: none;
+  transform: scale(1.1);
+}
+
+nav img {
+  height: 8vh;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#nav-tablet {
+  display: none;
+}
+
+#nav-desktop a {
+  display: none;
+}
+
+#nav-mobile {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  z-index: 9999;
+  height: auto;
+  width: 100%;
+  bottom: 0px;
+  background-color: #E4E4E4;
+  -webkit-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.32);
+  -moz-box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.32);
+  box-shadow: 0px -1px 5px 0px rgba(0, 0, 0, 0.32);
+}
+
+.nav-icon {
+  width: 25px;
+  height: 25px;
+  margin: 15px;
+}
+
+#carouselExampleIndicators, .carousel slide, .carousel-item, .gradient {
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+
+#carouselExampleIndicators, .container, section, header, .card, .interests-container {
+  margin-bottom: 50px;
+}
+
+#carouselExampleIndicators span, #carouselExampleIndicators a {
+  z-index: 12;
+}
+
+.card a {
+  background-color: #EF4658;
+  border: 0px;
+  width: 50%;
+}
+
+.card a:hover {
+  background-color: orange;
+}
+
+.gradient {
+  background-color: rgba(0, 0, 0, 0.3);
+  position: absolute;
+  z-index: 11;
+  text-align: center;
+}
+
+footer {
+  background-color: #273238;
+  width: 100%;
+  height: 300px;
+}
+
+footer p {
+  color: #E4E4E4;
+  font-size: 20px;
+}
+
+.footer-wrapper {
+  flex-direction: column;
+  width: 40%;
+  text-align: center;
+}
+
+.about {
+  background-image: url(../images/sunset.jpg);
+}
+
+.city {
+  background-image: url(../images/aarhus.jpg);
+}
+
+.interests {
+  background-image: url(../images/building.jpg);
+}
+
+.header-gradient {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+section {
+  flex-direction: column;
+}
+
+section img {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+section p {
+  text-align: center;
+}
+
+/*------------Table---------------*/
+table {
+  width: 45%;
+  border-collapse: collapse;
+}
+
+tr {
+  border: solid #EF4658 2px;
+}
+
+#table-headline {
+  background-color: #EF4658;
+  color: white;
+  border-radius: 15px;
+}
+
+th, td {
+  padding: 10px;
+}
+
+td {
+  background-color: white;
+}
+
+/*------------Table end-------------*/
+/*-------interests------------------*/
+.interests-container {
+  width: 400px;
+  height: 450px;
+  background-color: transparent;
+  position: relative;
+}
+
+.circle {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+}
+
+.interests-container img {
+  width: 200px;
+  height: 200px;
+}
+
+.white-case {
+  width: 100%;
+  height: 350px;
+  bottom: 0px;
+  background-color: white;
+  bottom: 0px;
+  position: absolute;
+  border-radius: 10px;
+  padding-top: 100px;
+  text-align: center;
+}
+
+#wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+/*-------interests end--------------*/
+@media screen and (min-width: 600px) and (max-width: 999px) {
+  #nav-mobile, #nav-desktop {
+    display: none;
+  }
+  #nav-tablet {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #nav-desktop a {
+    display: block;
+  }
+  #nav-mobile, #nav-tablet {
+    display: none;
+  }
+}
